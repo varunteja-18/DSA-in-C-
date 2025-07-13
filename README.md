@@ -2,17 +2,27 @@
 ✅ Step-by-Step: Run C# File Using csc.exe
 
 🔧 Step 1: Locate C# Compiler
+
 Find the path to the compiler (csc.exe) on your machine:
+  
    C:\Windows\Microsoft.NET\Framework64\v4.0.30319
    
 🛠️ Step 2: Add Path to System Environment Variables
+
 1.Press Win + S, type "Environment Variables", and open:
+  
   Edit the system environment variables
+
 2.In the System Properties window, click Environment Variables...
+
 3.Under System Variables, find and select Path, then click Edit
+
 4.Click New, then paste:
+
     C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+
 5.Click OK to close all dialogs
+
 ✅ Now you can access csc from any terminal window
 
 📄 Step 3: Create a Simple C# File
