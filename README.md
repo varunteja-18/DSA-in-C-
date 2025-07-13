@@ -1,32 +1,38 @@
 # DSA-in-Csharp
-✅ Step-by-Step: Run C# File Using csc.exe
 
-🔧 Step 1: Locate C# Compiler
+---
 
-Find the path to the compiler (csc.exe) on your machine:
-  
+## ✅ Run C# Code Using `csc.exe` (Without Creating a Project)
+
+This guide shows how to **compile and run a standalone C# file** using the built-in `csc` (C# compiler) available in Windows.
+
+---
+
+### 🔧 Step 1: Add C# Compiler to System Path
+
+1. Copy this path:
+
+   ```
    C:\Windows\Microsoft.NET\Framework64\v4.0.30319
-   
-🛠️ Step 2: Add Path to System Environment Variables
+   ```
+2. Open **System Environment Variables**:
 
-1.Press Win + S, type "Environment Variables", and open:
-  
-  Edit the system environment variables
+   * Press `Win + S`, search for **"Environment Variables"**
+   * Click on **"Edit the system environment variables"**
+3. In the **System Properties** window:
 
-2.In the System Properties window, click Environment Variables...
+   * Click **Environment Variables...**
+   * Under **System variables**, select **Path** → click **Edit**
+   * Click **New**, and paste the path above
+   * Click **OK** on all dialogs to save
 
-3.Under System Variables, find and select Path, then click Edit
+---
 
-4.Click New, then paste:
+### 📄 Step 2: Create a `hello.cs` File
 
-    C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+Create a file named `hello.cs` and paste the following code:
 
-5.Click OK to close all dialogs
-
-✅ Now you can access csc from any terminal window
-
-📄 Step 3: Create a Simple C# File
-Open Notepad or any code editor and save the following code as hello.cs:
+```csharp
 using System;
 
 class Program
@@ -36,20 +42,56 @@ class Program
         Console.WriteLine("Hello from C#!");
     }
 }
-Make sure it’s saved with the .cs extension, not .txt.
+```
 
+Save it in any folder (e.g., Desktop).
 
-💻 Step 4: Open Command Prompt
-1.Press Win + R, type cmd, and press Enter
+---
 
-2.Navigate to the folder where hello.cs is saved.
+### 💻 Step 3: Open Command Prompt and Navigate to the File Location
 
+```bash
+cd C:\Users\<YourName>\Desktop
+```
 
-⚙️ Step 5: Compile the C# File Using csc
-    csc hello.cs
-✅ This generates an executable file named hello.exe in the same folder.
+Replace `<YourName>` with your actual Windows username or path where the file is saved.
 
-▶️ Step 6: Run the Executable
-   .\hello.exe
-Output:
+---
+
+### ⚙️ Step 4: Compile the C# File
+
+```bash
+csc hello.cs
+```
+
+This will generate an `hello.exe` file in the same folder.
+
+---
+
+### ▶️ Step 5: Run the Executable
+
+```bash
+.\hello.exe
+```
+
+You should see the output:
+
+```
 Hello from C#!
+```
+
+---
+
+### ✅ Summary
+
+| Step | Description                              |
+| ---- | ---------------------------------------- |
+| 1    | Add `csc.exe` path to system environment |
+| 2    | Create `hello.cs` file                   |
+| 3    | Open Command Prompt and navigate to file |
+| 4    | Compile using `csc hello.cs`             |
+| 5    | Run using `.\hello.exe`                  |
+
+---
+
+
