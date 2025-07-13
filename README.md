@@ -2,9 +2,7 @@
 
 ---
 
-## ✅ Run C# Code Using `csc.exe` (Without Creating a Project)
-
-This guide shows how to **compile and run a standalone C# file** using the built-in `csc` (C# compiler) available in Windows.
+## ✅ To **compile and run a standalone C# file** using the built-in `csc` (C# compiler) available in Windows.
 
 ---
 
@@ -82,16 +80,6 @@ Hello from C#!
 
 ---
 
-### ✅ Summary
 
-| Step | Description                              |
-| ---- | ---------------------------------------- |
-| 1    | Add `csc.exe` path to system environment |
-| 2    | Create `hello.cs` file                   |
-| 3    | Open Command Prompt and navigate to file |
-| 4    | Compile using `csc hello.cs`             |
-| 5    | Run using `.\hello.exe`                  |
-
----
 
 
